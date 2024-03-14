@@ -1,121 +1,126 @@
-$color_1: #5f5d5d;
-$font-family_1: 'Arial', sans-serif;
-$font-family_2: 'Bebas Neue', sans-serif;
-$font-family_3: "roboto mono";
-$background-color_1: #f0f0f0;
+$color_1: white;
+$color_2: black;
+$font-family_1: 'Lexend Deca', sans-serif;
+$font-family_2: 'Red Hat Display', sans-serif;
+$background-color_1: grey;
 
+@-webkit-keyframes bg-scrolling-reverse {
+	100% {
+		background-position: 50px 50px;
+	}
+}
+@keyframes bg-scrolling-reverse {
+	100% {
+		background-position: 50px 50px;
+	}
+}
+@-webkit-keyframes bg-scrolling {
+	0% {
+		background-position: 50px 50px;
+	}
+}
+@keyframes bg-scrolling {
+	0% {
+		background-position: 50px 50px;
+	}
+}
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 body {
 	background: linear-gradient(to bottom, #fdfdfd 0%,#d6d7d8 100%);
 	font-family: $font-family_1;
 }
 h1 {
-	text-align: center;
-	padding: 20px;
 	font-family: $font-family_2;
-	font-size: xx-large;
+	padding: 10px;
+}
+h2 {
+	font-family: $font-family_2;
+	padding: 10px;
+	font-size: 2.5rem;
 }
 h3 {
-	padding: 20px;
+	font-family: $font-family_2;
+	padding: 10px;
 }
 h4 {
-	text-align: center;
-	padding: 20px;
 	font-family: $font-family_2;
-	font-size: x-large;
-}
-nav {
-	display: flex;
-	justify-content: center;
+	padding: 10px;
 }
 li {
-	margin: 0 10px;
-}
-a {
-	color: $color_1;
-	text-decoration: underline;
-	font-weight: 1000;
-	font-family: $font-family_3;
-	font-size: large;
-}
-.menu {
-	display: flex;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-.centrarYCircular {
-	display: auto;
-	margin-left: auto;
-	margin-right: auto;
-	width: 300px;
-	height: 300px;
-	border-radius: 100px;
-	-webkit-border-radius: 150px;
-	-moz-border-radius: 150px;
-}
-.fot_fam {
-	padding: 20px;
-	grid-area: izq;
-}
-.text_fam {
-	margin: 10px;
-	grid-area: der;
-}
-.centrar {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 300px;
-	height: 300px;
+	font-family: $font-family_2;
+	padding: 10px;
 }
 .container {
 	padding: 10px;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: auto;
 	grid-template-areas: "izq der";
 }
-.parrafo2 {
-	padding: 20px;
-	line-height: 1.5;
-	width: 500px;
-	border: solid black 2px;
-	margin: 30px;
-	height: 300px;
-	overflow: auto;
+.img_perfil {
+	width: 100%;
+	border-radius: 50%;
 }
-.parrafo3 {
-	padding: 20px;
-	line-height: 1.5;
-	width: 600px;
-	border: solid black 2px;
-	margin: 30px;
+.texto {
+	margin: 10px;
+	grid-area: der;
 }
-.parrafo4 {
-	text-align: center;
-	padding: 50px;
-	font-family: $font-family_3;
-	font-size: large;
-	display: block height: 400px;
-	width: 500px;
-	margin-left: auto;
-	margin-right: auto;
+.foto_perfil {
+	padding: 20px;
+	grid-area: izq;
+}
+.fam {
+	width: 100%;
+	border-radius: 10%;
+}
+.texto_derecho {
+	margin: 10px;
+	grid-area: der;
+}
+footer {
+	background-color: $background-color_1;
+	padding: 20px;
 	color: $color_1;
-	font-weight: 1000;
+	display: flex;
+	justify-content: flex-end;
 }
-.abajo {
-	position: relative;
-	bottom: 0;
-	width: 100%;
-	background-color: $background-color_1;
-	padding: 10px;
+.mail {
+	margin: 10px;
+	width: 40px;
+	border-radius: 50%;
 }
-.abajoindex {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	background-color: $background-color_1;
-	padding: 10px;
+.color_link {
+	color: $color_1;
+	text-decoration: none;
+	font-size: 14px;
+	&:hover {
+		color: $color_2;
+	}
+}
+.proyect {
+	text-align: center;
+}
+.proyect2 {
+	padding: 10px 20px;
+}
+.ul2 {
+	list-style-type: none;
+}
+.center {
+	text-align: center;
+}
+.chica {
+	font-family: $font-family_1;
+	font-size: 1rem;
+	font-weight: bold;
+}
+.lista {
+	font-family: $font-family_1;
+	font-size: 1rem;
 }
 @media only screen and (max-width: 768px) {
 	.container {
@@ -123,11 +128,27 @@ a {
 		grid-template-rows: repeat(2, auto);
 		grid-template-areas: "izq" "der";
 	}
-	.abajoindex {
-		position: relative;
-		bottom: 0;
-		width: 100%;
-		background-color: $background-color_1;
-		padding: 10px;
+	h2 {
+		font-size: 24px;
+	}
+	h1 {
+		font-size: 24px;
+	}
+	p {
+		font-size: 12px;
+	}
+	.chicha {
+		font-size: 12px;
+	}
+	.lista {
+		font-size: 12px;
+	}
+	.foto_perfil {
+		padding: 5px;
+	}
+	.color_link {
+		color: $color_1;
+		font-weight: bold;
+		font-size: 10px;
 	}
 }

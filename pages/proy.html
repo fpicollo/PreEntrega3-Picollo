@@ -5,28 +5,25 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <meta name="description"
-      content="Facundo Picollo CV">
+      content="Facundo Picollo - Datos">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200&family=Red+Hat+Display:wght@500&display=swap" rel="stylesheet">
    <meta name="keywords" content="Sass, Html5, Css, Bootstrap, Web Development">
-   <title>Facundo Picollo</title>
-   <link rel="stylesheet" href="./css/bootstrap.min.css" />
-   <link rel="stylesheet" href="./css/styles.css">
+   <title>Facundo Picollo - Datos</title>
+   <link rel="stylesheet" href="../css/bootstrap.min.css" />
+   <link rel="stylesheet" href="../css/styles.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/csshake/1.5.3/csshake.min.css">
    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-   <link rel="shortcut icon" href="./img/icons/logo fp.png" type="image/x-icon" />
-   
+   <link rel="shortcut icon" href="../img/icons/logo fp.png" type="image/x-icon" />
 </head>
-
-
 
 <body>
    <header id="header">
       <nav class="navbar navbar-expand-lg navbar-dark bg-secondary" id="navbar">
          <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="./img/icons/logo fp.png" alt="" width="70px" height="70px"> 
+            <a class="navbar-brand" href="../pages/proy.html"><img src="../img/icons/logo fp.png" alt="" width="70px" height="70px"> 
                Facundo Picollo</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -36,50 +33,58 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                     <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                     <a class="nav-link" aria-current="page" href="../index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="./pages/proy.html">Datos</a>
+                     <a class="nav-link active" href="proy.html">Datos</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="./pages/exp.html">Experiencia</a>
+                     <a class="nav-link" href="exp.html">Experiencia</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="./pages/index_eng.html">English Version</a>
+                     <a class="nav-link" href="../pages/proy_eng.html">English Version</a>
                   </li>
                </ul>
             </div>
          </div>
       </nav>
 </header>
+<main class="container">
+    <div class="foto_perfil">
+        <img src="../img/descarga.png" class=fam alt="foto familiar">
+    </div>
+    <div class="texto_derecho">
+        <h1>Mis Datos</h1>
+            <p>29 Años</p>
+            <p>Argentino</p>       
+    </div>
+</main>
+<section>
+<div class= "center">
+<div class="mapouter" >
+   <div class="gmap_canvas">
+     <iframe width="500" height="560" id="gmap_canvas" src="https://maps.google.com/maps?q=lanus&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+   </div>
+ </div>
+</div>
+</section>
 
-   <main class="container">
-      <div class="foto_perfil" ">
-          <img src="./img/FP.jpg" class="img_perfil" alt="foto personal">
-      </div>
-      
-      <div class="texto_derecho" data-aos="fade-left">
-          <h1>Me presento...</h1>
-          <p>Soy un trabajador dedicado, enfocado en el trabajo en equipo y en tener una mentalidad orientada a los detalles.<br>
-          Estoy buscando mi primera experiencia profesional en el mundo IT, donde espero encontrar desafíos que me hagan crecer tanto personal como profesionalmente.</p>
-      </div>
-  
-  </main>
 <footer>
    
    <a href="https://www.facebook.com/facundouriel.picollo" target=_blank>
-        <img class= "menu_contacto mail" src="./img/icons/face.gif"  alt="logo facebook">
-   </a>
-   <a href="https://www.instagram.com/_facupicollo/" target=_blank>
-        <img class= "menu_contacto mail" src="./img/icons/insta.gif" alt="logo instagram">
-   </a>
-   <a href="https://www.linkedin.com/in/facundopicollo/" target=_blank>
-       <img class= "menu_contacto mail" src="./img/icons/linked.gif" alt="logo linkedin">
-   </a>
-    <a class="color_link" href="facundo.picollo@gmail.com" target=_blank>
-       <img class= "menu_contacto mail" src="./img/icons/mail.gif">facundo.picollo@gmail.com</a>
-
+      <img class= "menu_contacto mail" src="../img/icons/face.gif"  alt="logo facebook">
+ </a>
+ <a href="https://www.instagram.com/_facupicollo/" target=_blank>
+      <img class= "menu_contacto mail" src="../img/icons/insta.gif" alt="logo instagram">
+ </a>
+ <a href="https://www.linkedin.com/in/facundopicollo/" target=_blank>
+     <img class= "menu_contacto mail" src="../img/icons/linked.gif" alt="logo linkedin">
+ </a>
+  <a class="color_link" href="facundo.picollo@gmail.com" target=_blank>
+     <img class= "menu_contacto mail" src="../img/icons/mail.gif">facundo.picollo@gmail.com</a>
+	 
 </footer>
+</div>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
  <script src="../js/bootstrap.min.js"></script>
@@ -89,5 +94,4 @@
    AOS.init();
  </script>
 </body>
-
 </html>
